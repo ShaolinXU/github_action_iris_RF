@@ -32,8 +32,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
       run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
+        git config --global user.name "Shaolin Xu"
+        git config --global user.email "xushaolin1994@163.com"
         git add model/
         git commit -m "Add trained iris model [skip ci]" || echo "No changes"
         git push origin main
